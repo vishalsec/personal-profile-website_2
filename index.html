@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishal Vishwakarma | Cybersecurity Professional</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">VV</div>
+    <ul id="nav-list">
+      <li><a href="#" data-target="about">About</a></li>
+      <li><a href="#" data-target="skills">Skills</a></li>
+      <li><a href="#" data-target="portfolio">Portfolio</a></li>
+      <li><a href="#" data-target="experience">Experience</a></li>
+      <li><a href="#" data-target="certs">Certifications</a></li>
+      <li><a href="#" data-target="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Vishal Vishwakarma</h1>
+    <p class="subtitle">Cybersecurity Professional</p>
+    <div class="pulse"></div>
+  </header>
+
+  <main id="main-content">
+    <section id="about" class="content-section active">
+      <h2>About Me</h2>
+      <p>As a passionate cybersecurity professional based in Mumbai, I thrive in defending digital domains from emerging threats. With hands-on experience in Security Operations, Web Application Firewalls, Endpoint Detection, and Vulnerability Management, I constantly sharpen my expertise in threat intelligence and incident response.</p>
+      <p>I have a strong foundation in security frameworks such as MITRE ATT&CK, NIST, and OWASP. My commitment lies in proactive protection by harnessing cutting-edge tools and automation, driven by continuous learning and real-world problem solving.</p>
+      <p>Outside work, I enjoy solving Capture The Flag (CTF) challenges, staying updated with cyber trends, and engaging in community trainings to foster collective cyber resilience.</p>
+      <p><strong>Location:</strong> Virar (W), Mumbai, Maharashtra, India</p>
+      <p><strong>Email:</strong> <a href="mailto:vishalvishwakarma9518@gmail.com">vishalvishwakarma9518@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vishal-vishwakarma-34698a268" target="_blank">linkedin.com/in/vishal-vishwakarma-34698a268</a></p>
+    </section>
+
+    <section id="skills" class="content-section">
+      <h2>Skills & Tools</h2>
+      <ul class="skills-grid">
+        <li>SOC Operations & SIEM Management (Elastic, Azure Sentinel)</li>
+        <li>WAF Configuration & Threat Mitigation (Akamai, Cloudflare)</li>
+        <li>Endpoint Detection & Response (SentinelOne EDR/XDR)</li>
+        <li>API Security Testing & OWASP API Top 10</li>
+        <li>Incident Response & Forensics</li>
+        <li>Privileged Access Management (PAM)</li>
+        <li>Cybersecurity Frameworks: MITRE ATT&CK, NIST, OWASP Top 10</li>
+        <li>Automation & Scripting for Security Workflows</li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="content-section">
+      <h2>Portfolio</h2>
+      <ul class="portfolio-list">
+        <li><strong>Real-time Threat Detection Dashboard:</strong> Developed an interactive dashboard to monitor and analyze global threat feeds, enabling rapid response capabilities.</li>
+        <li><strong>Automated API Vulnerability Testing:</strong> Custom scripts implementing OWASP API Top 10 detection to secure enterprise APIs.</li>
+        <li><strong>Endpoint Security Implementation:</strong> Successfully deployed SentinelOne across thousands of endpoints, enhancing endpoint protection and visibility.</li>
+        <li><strong>Security Automation Scripts:</strong> PowerShell and Python scripts to automate routine SOC tasks and log analysis.</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="content-section">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Security Analyst L2 - SOC | HDFC Life Insurance (Nityo Infotech)</h3>
+        <span>Oct 2024 – Present</span>
+        <ul>
+          <li>Manage and optimize WAF and API security tools (Akamai, Cloudflare, NonameSec).</li>
+          <li>Conduct SIEM analysis and incident remediation in Azure Sentinel environment.</li>
+          <li>Drive privileged access management compliance and vulnerability remediation workflows.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Web Security Analyst | CyberNX</h3>
+        <span>Sep 2023 – Oct 2024</span>
+        <ul>
+          <li>Maintained Cloudflare security policies and monitored Elastic SIEM dashboards.</li>
+          <li>Deployed and managed Endpoint Detection & Response solutions.</li>
+          <li>Configured Cloudflare Zero Trust and network perimeter security.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certs" class="content-section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>API Penetration Testing (APISEC University)</li>
+        <li>Cyber Security Operations & Technology Solutions (Udemy)</li>
+        <li>Certified Cloud Security Practitioner (Coursera)</li>
+        <li>Ethical Hacking Essentials (EC-Council)</li>
+        <li>Cloudflare Accredited Configuration Engineer</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>If you'd like to connect, feel free to email me at <a href="mailto:vishalvishwakarma9518@gmail.com">vishalvishwakarma9518@gmail.com</a> or reach out on <a href="https://linkedin.com/in/vishal-vishwakarma-34698a268" target="_blank">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Vishal Vishwakarma — Cybersecurity Professional
+  </footer>
+
+  <script>
+    // Smooth scroll & dynamic section toggle
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('.content-section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('data-target');
+        sections.forEach(sec => sec.classList.remove('active'));
+        document.getElementById(targetId).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
