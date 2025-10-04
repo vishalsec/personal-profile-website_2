@@ -70,13 +70,30 @@ header .subtitle {
 }
 
 header .pulse {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   margin: 2em auto;
   border: 2px solid #0ff0fc;
   border-radius: 50%;
   box-shadow: 0 0 30px #1defff77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   animation: pulse 3s infinite;
+  background: #181f2b;
+  position: relative;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  border: 3px solid #161c2b;
+  box-shadow: 0 0 15px #00e8fa60;
+  background: #181f2b;
 }
 
 @keyframes pulse {
@@ -118,15 +135,19 @@ h2 {
   letter-spacing: 1.2px;
 }
 
-.skills-grid {
+.skills, section ul {
+  padding-left: 1.3em;
+}
+
+.Tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
   padding-left: 0;
   list-style: none;
 }
 
-.skills-grid li {
+.Tools-grid li {
   background: #0ff0fc22;
   border-left: 5px solid #0ff0fc;
   padding: 1em 1.2em;
@@ -141,6 +162,11 @@ h2 {
 .job h3 {
   margin-bottom: 0.3em;
   color: #82e0ff;
+}
+
+.cert-list a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
